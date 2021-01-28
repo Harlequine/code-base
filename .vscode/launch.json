@@ -1,0 +1,57 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch activity2",
+            "request": "launch",
+            "mainClass": "Activities.activity2",
+            "projectName": "Codes_37ca9c59"
+        },
+        {
+            "type": "java",
+            "name": "Launch activity1",
+            "request": "launch",
+            "mainClass": "Activities.activity1",
+            "projectName": "Codes_37ca9c59"
+        },
+        {
+            "type": "java",
+            "name": "Launch elseifstatement",
+            "request": "launch",
+            "mainClass": "javacontrol.elseifstatement",
+            "projectName": "Codes_37ca9c59"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - inputactivity",
+            "request": "launch",
+            "mainClass": "inputactivity",
+            "projectName": "Codes_37ca9c59"
+        },
+        {
+            "name": "g++.exe - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "\\usr\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++.exe build active file"
+        }
+    ]
+}
