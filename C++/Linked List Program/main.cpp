@@ -3,6 +3,40 @@
 #include <time.h> //time decalarion
 #include <conio.h>
 
+struct stackLinkedList{
+    int data;
+    stackLinkedList *next; 
+};
+stackLinkedList *top = NULL;
+
+
+void pushStackFunction(int num){
+    stackLinkedList* node = new stackLinkedList;
+    node -> data = num;
+    node -> next = NULL;
+
+    if(top == NULL){
+        top = node;
+    }
+
+    else{
+        node -> next = top;
+        top = node;
+    }  
+}
+
+void topStackFunction(){
+    std :: cout << top -> data << std::endl;
+}
+
+void popStackFunction(){
+    stackLinkedList* temp = new stackLinkedList;
+    temp = top;
+    top = top -> next;
+    free(top);
+}
+
+
 time_t timeToday = time(NULL);
 
 void movielist(){ 
@@ -14,20 +48,30 @@ void movielist(){
         std::cout<< "3.) Before Sunrise "<<std::endl;
         std::cout<< "4.) Before Sunrise "<<std::endl;
         std::cout<< "5.) Wall-E "<<std::endl;
-}
+};
 
 void request()
 {
+    int num;
+    std :: cout << "Input: "; std :: cin >> num;
+    pushStackFunction(num);
+    std :: cout << "Input: "; std :: cin >> num;
+    pushStackFunction(num);
+    std :: cout << "Input: "; std :: cin >> num;
+    pushStackFunction(num);
+    std :: cout << "Input: "; std :: cin >> num;
+    pushStackFunction(num);
 
-
-
+    while(top != NULL){
+        topStackFunction();
+        top = top -> next;
 }
+};
 
 void reservation()
 {
 
-}
-
+};
 void mainscreen()
 {
     std::cout << std::endl;
