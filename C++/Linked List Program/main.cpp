@@ -39,7 +39,7 @@ void popStackFunction(){
 
 time_t timeToday = time(NULL);
 
-void movielist(){ 
+void movielist(){ //chenalin
     std::cout<< "--------------------------"<<std::endl;
     std::cout<< "\tNOW SHOWING"<<std::endl;
     std::cout<< "--------------------------"<<std::endl;
