@@ -25,7 +25,7 @@ void pushStackFunction(int num){
     }  
 }
 
-void topStackFunction(){
+void topStackFunction(){//subalicious
     std :: cout << top -> data << std::endl;
 }
 
